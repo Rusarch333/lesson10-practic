@@ -72,7 +72,7 @@ main{
 .product{
   display: inline-block;
   width: 49%;
-  padding: 0em 1em 4.0em; /* margin не влезет в width */
+  padding: 0em 1em 4.0em; /* margin не вміститься у width */
   cursor: pointer;
   text-align: initial;
 }

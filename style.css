@@ -1,7 +1,5 @@
 *{
   box-sizing: border-box;
-  padding: 0;
-  margin: 0;
 }
 body{
   color: rgb(153, 153, 153)  ;
@@ -16,36 +14,34 @@ img{
 }
 h1,
 h2{
+  margin: 0; /* reset css */
   color: rgb(255,255,255);
 }
 a{
   color:inherit;
   text-decoration: none;
 }
-
+p,ul{
+  margin: 0; /* reset css */
+}
 .wrapper{
-  padding-left: 22%;
-  padding-right: 22%;
+  width: 55%;
+  margin: auto;
 }
 header {
-  padding-top: 4.5em;
+  margin-top: 4em;
 }
 .logo{
-  width: 40px;
-  height: 40px;
-  padding-top: 0.5em;
+  width: 2.5em;
+  height: 2.5em;
+  padding: 0.5em;
   border-radius: 50%;
   margin: auto;
   background-color: rgba(255, 255, 255, 0.15);
 }
-.logo-icon{
-  width: 25px;
-}
 .main-site-title{
-  padding-top: 0.3em;
-  padding-left: 17%;
-  padding-right: 17%;
-  padding-bottom: 0.4em;
+  width: 60%;
+  margin: 0.3em auto 0.4em;
   font-size: 3em;
   letter-spacing: -0.03em;
 }
@@ -54,7 +50,7 @@ header {
   width: 8.5%;  /* для .one-line */
   padding-top: 0.7em;
   padding-bottom: 0.7em;
-  border-radius: 25px;
+  border-radius: 1.56em;
   margin-left: 0.5em;
   color: rgb(255,255,255);
   background-color: rgba(255, 255, 255, 0.15);
@@ -71,33 +67,33 @@ header {
   text-overflow: ellipsis; /* додає трьох крапок у кінці тексту */
 }
 main{
-  padding-top: 6em;
+  margin-top: 6em;
 }
 .product{
   display: inline-block;
   width: 49%;
-  padding: 0em 1em 4.0em;
+  padding: 0em 1em 4.0em; /* margin не влезет в width */
   cursor: pointer;
   text-align: initial;
-  
 }
 .product-image{
   height: 325px;
   border: 1px solid rgba(255, 255, 255, 0.15);
-  border-radius: 25px;
+  border-radius: 1.56em;
 }
 .product-title{
-  padding-top: 1em;
+  margin-top: 1em;
   font-size: inherit;
 }
 .product-text{
-  padding-top: 0.15em;
+  margin-top: 0.15em;
 }
 footer{
-  padding-top: 7.5em;
-  padding-bottom: 8.8em;
+  margin-top: 7.5em;
+  margin-bottom: 8.8em;
 }
 .footer-subscribe-bar{
+  padding-left: 0;             /* reset default стилі */
   list-style-type: none;
 }
 .footer-subscribe-bar li{

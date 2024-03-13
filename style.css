@@ -1,107 +1,119 @@
 *{
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 body{
-  color: white; 
+  color: rgb(153, 153, 153)  ;
   background-color: black;
   text-align: center;
-  font-size: 25px;
-  font-family: "Manrope", "Manrope Placeholder", sans-serif;
+  font-size: 16px;
+  font-family: sans-serif;
 }
 img{
   width:100%;
+  object-fit:cover;
 }
-h2, a {
-  /* 
-    Заголовки h2 і посилання не повинні переходити на наступний рядок (повинні займати виключно один рядок!!!)
-    Дам обидва варіанти, оскільки невпевнений про що саме у умові
-  */
-  display: inline-block; /* 2 заголовки не можуть бути на 1 рядку разом */
-  white-space: nowrap;   /* Заголовок буде тільки на 1 рядку і не буде переходити на інший*/
+h1,
+h2{
+  color: rgb(255,255,255);
 }
 a{
   color:inherit;
   text-decoration: none;
 }
+
 .wrapper{
-  margin: 0 22%;
+  padding-left: 22%;
+  padding-right: 22%;
+}
+header {
+  padding-top: 4.5em;
 }
 .logo{
-  width: 60px;
-  height: 60px;
-  padding: 10px;
+  width: 40px;
+  height: 40px;
+  padding-top: 0.5em;
   border-radius: 50%;
-  background-color: #ffffff26;
   margin: auto;
-  margin-top: 100px;
-} 
-.main-site-title{
-  width: 60%;
-  margin: auto;
-  margin-top: 30px;
-  font-size: 2.7em;
+  background-color: rgba(255, 255, 255, 0.15);
 }
-.header-buttons-wrapper{
-  margin-top: 30px;
+.logo-icon{
+  width: 25px;
+}
+.main-site-title{
+  padding-top: 0.3em;
+  padding-left: 17%;
+  padding-right: 17%;
+  padding-bottom: 0.4em;
+  font-size: 3em;
+  letter-spacing: -0.03em;
 }
 .header-button{
   display: inline-block;
-  width: 135px;
-  height: 60px;
-  padding: 15px 5px 5px 5px;
+  width: 8.5%;  /* для .one-line */
+  padding-top: 0.7em;
+  padding-bottom: 0.7em;
   border-radius: 25px;
-  background-color: #ffffff26;
-  font-weight: bold;
+  margin-left: 0.5em;
+  color: rgb(255,255,255);
+  background-color: rgba(255, 255, 255, 0.15);
+  font-weight: 700;
 }
-.header-button:first-of-type {
-  margin-right: 10px;
+.header-button-invers{
+  margin-left: 0;
   color: black;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
+}
+.one-line {
+  white-space: nowrap;     /* забороняє перенесення тексту на новий рядок */
+  overflow: hidden;        /* приховує текст, який виходить за межі */
+  text-overflow: ellipsis; /* додає трьох крапок у кінці тексту */
 }
 main{
-  margin-top: 30px;
+  padding-top: 6em;
 }
 .product{
   display: inline-block;
-  /* Чтобы было по 2 в ряд, 1% под отступы заложили */ 
-  width: 45%;
-  margin: 20px;
-  height: 317px;
-  margin-top: 150px;
+  width: 49%;
+  padding: 0em 1em 4.0em;
+  cursor: pointer;
   text-align: initial;
+  
 }
 .product-image{
-  border: 1px solid #ffffff26;
+  height: 325px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: 25px;
-  height: 500px;
-  object-fit:cover;
 }
 .product-title{
-  margin: 0;
-  margin-top: 20px;
-  font-size: 1em;
+  padding-top: 1em;
+  font-size: inherit;
 }
 .product-text{
-  margin-top: 3px;
-  margin-bottom: 0;
+  padding-top: 0.15em;
 }
 footer{
-  margin: 200px 0px;
+  padding-top: 7.5em;
+  padding-bottom: 8.8em;
 }
 .footer-subscribe-bar{
- padding-left: 0;
- margin-bottom: 5px;
- list-style-type: none;
+  list-style-type: none;
 }
 .footer-subscribe-bar li{
   display: inline-block;
+  width: 6%;                   /* для .one-line */
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.footer-subscribe-bar li a{
+  display: inline-block;       /* для .one-line */
+  width: 100%;                 /* для .one-line */
+  padding: 0.5em 0.2em 0.4em;  /* хітбокси */
+  color:  rgb(255, 255, 255);
   font-weight: bold;
 }
-.footer-subscribe-bar > :nth-child(-n+2),
-.footer-author-label {
-  margin-right: 10px;
-}
-.general-text-style{
-  color: #999999;
-  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
+.footer-author-label a {
+  display: inline-block;
+  width: 11%;
 }

@@ -103,8 +103,8 @@ footer{
 .footer-subscribe-bar li{
   display: inline-block;
   width: 6%;                   /* для .one-line */
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 0.312em;
+  padding-bottom: 0.312em;
 }
 .footer-subscribe-bar li a{
   display: inline-block;       /* для .one-line */
